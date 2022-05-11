@@ -1,9 +1,105 @@
+/*variables*/
+:root {
+    --main-color: #303030;
+    --font-color: white;
 
-.title-div {
+    --button-green: #3A9E54;
+    --button-red: #C82C30;
+    --button-blue: #0391DA;
+    --button-yellow: #D3D03A;
+  }
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Tags */
+body{
+    background-color: var(--main-color);  
+    color: var(--font-color);
+}
+h1{
     font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    background-color: gray;
+h2{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
 }
+
+b{
+    visibility: hidden;
+}
+
+/* Class Selectors */
+.title{
+    margin: 40px;
+    text-align: center;
+}
+
+.game-board{
+    margin: 10px;
+}
+
+.buttons{
+    /* Temporary solution to remove the horizontal scroll bar */
+    width: 99%;
+}
+
+.left{
+    text-align: right;
+    padding: 10px;
+}
+
+.right{
+    text-align: left;
+    padding: 10px;
+}
+
+.btn{
+    width: 200px;
+    height: 200px;
+}
+
+.button1{
+    /* Transforms the square into a triangle */
+    border-top-left-radius: 100%;
+    background-color: var(--button-green);
+}
+
+.button2{
+    border-top-right-radius: 100%;
+    background-color: var(--button-red);
+}
+
+.button3{
+    border-bottom-left-radius: 100%;
+    background-color: var(--button-yellow);
+}
+
+.button4{
+    border-bottom-right-radius: 100%;
+    background-color: var(--button-blue);
+}
+
+/* Footer */
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background: var(--main-color);  
+    color: var(--font-color);
+    text-align:center;
+  }
+
+  .footer-copyright {
+    padding:5px 0px 5px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+  }
+
