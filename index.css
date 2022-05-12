@@ -64,7 +64,13 @@ b{
 .btn{
     width: 200px;
     height: 200px;
+    box-shadow: none;
 }
+
+.btn:focus {
+    /* Remove focus around buttons on click */
+    box-shadow: none;
+  }
 
 .button1{
     /* Transforms the square into a triangle */
@@ -86,6 +92,16 @@ b{
     border-bottom-right-radius: 100%;
     background-color: var(--button-blue);
 }
+
+.pressed{
+    border-width: 5px;
+    border-color: white;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
 
 /* Footer */
 footer{
